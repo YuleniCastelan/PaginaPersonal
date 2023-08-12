@@ -153,8 +153,10 @@ footer p{
 }
 main{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: column;
     gap: 10rem;
+    margin: 5rem;
 }
 main img{
     width: 40%;
@@ -163,6 +165,7 @@ main img{
 .contacto{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 .contacto a{
     text-decoration: none;
@@ -173,7 +176,7 @@ main img{
     display: flex;
     flex-direction: row;
     border-radius: 3rem;
-    padding: 2rem;
+    padding: 1.5rem;
     align-items: center;
     height: 70%;
 }
@@ -183,7 +186,7 @@ main img{
     background-color: var(--color-fuente);
 }
 .contacto a img{
-    height: 100%;
+    height: 7rem;
 }
 
 
@@ -229,7 +232,9 @@ nav ul.menu li {
       padding: 1.5rem;
       border-radius: 5rem;
     }
-  
+    #menu-toggle{
+        display: none;
+    }
     #menu-toggle:checked ~ ul.menu {
       display: flex;
       flex-direction: column;
