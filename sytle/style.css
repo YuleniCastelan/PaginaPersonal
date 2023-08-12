@@ -358,7 +358,9 @@ nav ul.menu li {
     background-color: #000;
     margin: 6px 0;
 }
-  
+input{
+    visibility: hidden;
+}
 @media (max-width: 900px) {
     nav ul li a:hover{
         color: var(--color-fuente);

@@ -102,7 +102,7 @@ p{
     font-size: 1.2rem;
 }
 h3{
-    font-size: 2rem;
+    font-size: 4vw;
     text-align: center;
 }
 h5{
@@ -156,7 +156,7 @@ main{
     flex-wrap: wrap;
     flex-flow: column;
     gap: 10rem;
-    margin: 5rem;
+    margin: 5rem auto;
 }
 main img{
     width: 40%;
@@ -165,8 +165,11 @@ main img{
 .contacto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
+
 .contacto a{
     text-decoration: none;
     color: var(--color-fondo3);
@@ -176,9 +179,9 @@ main img{
     display: flex;
     flex-direction: row;
     border-radius: 3rem;
-    padding: 1.5rem;
+    padding: 1vw;
     align-items: center;
-    height: 70%;
+    height: 60%;
 }
 .contacto div a:hover{
     transform: scale(1.05);
@@ -186,7 +189,7 @@ main img{
     background-color: var(--color-fuente);
 }
 .contacto a img{
-    height: 7rem;
+    height: 7vw;
 }
 
 
@@ -212,7 +215,9 @@ nav ul.menu li {
     background-color: #000;
     margin: 6px 0;
 }
-  
+input{
+    visibility: hidden;
+}  
 @media (max-width: 900px) {
     nav ul li a:hover{
         color: var(--color-fuente);
